@@ -1,0 +1,24 @@
+/**
+ * Stylesheet
+ *
+ * @author Anthony Maudry <amaudry@gmail.com>
+ */
+body > footer {
+  background-color: #111922;
+  color: #fff;
+  margin: 0;
+  padding: .5em;
+  display: table;
+  width: 100%;
+}
+body > footer a,
+body > footer a:link,
+body > footer a:visited,
+body > footer a:hover {
+  color: #fff;
+  font-style: italic;
+}
+body > footer .footer-column {
+  display: table-cell;
+  width: 33%;
+}

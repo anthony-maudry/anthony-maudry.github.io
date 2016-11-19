@@ -1,0 +1,73 @@
+/**
+ * Stylesheet
+ *
+ * @author Anthony Maudry <amaudry@gmail.com>
+ */
+#cv .cv__infographics {
+  width: 100%;
+  display: table;
+}
+#cv .cv__infographics .cv__column,
+#cv .cv__infographics .cv__timeline {
+  display: table-cell;
+}
+#cv .cv__infographics .cv__column {
+  width: 50%;
+}
+#cv .cv__infographics .cv__column h3 {
+  margin-top: 0;
+}
+#cv .cv__infographics .cv__column .bar {
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  margin: .2em;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner {
+  display: inline-block;
+  background-color: #111922;
+  color: #fff;
+  padding: 0 .5em;
+  box-sizing: border-box;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--1 {
+  width: 10%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--2 {
+  width: 20%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--3 {
+  width: 30%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--4 {
+  width: 40%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--5 {
+  width: 50%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--6 {
+  width: 60%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--7 {
+  width: 70%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--8 {
+  width: 80%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--9 {
+  width: 90%;
+}
+#cv .cv__infographics .cv__column .bar .bar__inner.bar__inner--10 {
+  width: 100%;
+}
+#cv .cv__infographics .cv__column.cv__column--left {
+  padding-right: .5em;
+  border-right: 1px dashed #111922;
+}
+#cv .cv__infographics .cv__column.cv__column--left .bar .bar__inner {
+  float: right;
+  text-align: right;
+}
+#cv .cv__infographics .cv__column.cv__column--right {
+  padding-left: .5em;
+}

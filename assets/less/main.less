@@ -1,0 +1,93 @@
+@import 'vars.less';
+
+:root {
+  background-color: @white;
+}
+
+* {
+  font-family: @font-main;
+}
+
+p {
+  text-align: justify;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: @body-max-width;
+}
+
+h1, h2, h3, h4 {
+  font-family: @font-title;
+  color: @petroleum;
+  font-variant: small-caps;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+a, a:link, a:visited {
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  text-align: inherit;
+  transition: all .2s ease;
+  color: @petroleum;
+  &:hover {
+    color: @red;
+  }
+}
+
+.anchor {
+  text-decoration: inherit;
+  position: relative;
+  &:after {
+    content: '<a>';
+    position: absolute;
+    left: 100%;
+    font-variant: normal;
+    display: inline-block;
+    margin-left: .2em;
+    opacity: 0;
+    transform: translate(50%, 0);
+    transition: all .2s ease;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.card {
+  margin-bottom: 2em;
+  h4 {
+    margin-bottom: 0;
+    em, strong {
+      font-weight: normal;
+      font-variant: normal;
+    }
+    em {
+      font-size: .8em;
+      font-style: italic;
+    }
+  }
+}

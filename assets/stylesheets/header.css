@@ -1,0 +1,96 @@
+/**
+ * Stylesheet
+ *
+ * @author Anthony Maudry <amaudry@gmail.com>
+ */
+body > .header {
+  background-color: #111922;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 360px;
+  transition: all .2s ease;
+}
+body > .header .avatar {
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/avatar.jpg");
+  background-position: center center;
+  background-size: cover;
+  margin: 50px auto 0 auto;
+  border-radius: 50%;
+  transition: all .2s ease;
+}
+body > .header > nav {
+  background-color: whitesmoke;
+  height: 2em;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  transition: all .2s ease;
+}
+body > .header > nav > a,
+body > .header > nav a:link,
+body > .header > nav a:visited {
+  display: table-cell;
+  color: #111922;
+  text-align: center;
+  border-right: 1px solid #111922;
+  vertical-align: middle;
+  transition: all .2s ease;
+}
+body > .header > nav > a:last-child,
+body > .header > nav a:link:last-child,
+body > .header > nav a:visited:last-child {
+  border: none;
+}
+body > .header > nav > a:hover,
+body > .header > nav a:link:hover,
+body > .header > nav a:visited:hover {
+  color: whitesmoke;
+  background-color: #111922;
+}
+body > .header h1 {
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  transition: all .2s ease;
+  overflow: hidden;
+  height: 100px;
+}
+body > .header.header--scrolling {
+  position: fixed;
+  height: 30px;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  max-width: 950px;
+  display: table;
+}
+body > .header.header--scrolling > nav {
+  background-color: #111922;
+}
+body > .header.header--scrolling > nav > a,
+body > .header.header--scrolling > nav a:link,
+body > .header.header--scrolling > nav a:visited {
+  color: whitesmoke;
+  border-right-color: whitesmoke;
+}
+body > .header.header--scrolling > nav > a:hover,
+body > .header.header--scrolling > nav a:link:hover,
+body > .header.header--scrolling > nav a:visited:hover {
+  color: #111922;
+  background-color: whitesmoke;
+}
+body > .header.header--scrolling + *:nth-child(2) {
+  margin-top: 30px;
+}
+body > .header.header--scrolling .avatar,
+body > .header.header--scrolling h1 {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
